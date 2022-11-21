@@ -6,6 +6,15 @@ Usage examples for Uptime.com's REST API.
 
 - `add-http-check.ps1`
   Shows how to create a HTTP check with Powershell.
+  
+- `set-check-under-maintenance.ps1`
+  Shows how to set a check under maintenance with Powershell.
+  
+If using an older version of windows you may need to force TLS 1.2 to use the above scripts:
+```
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+```
+NOTE: This will only change it for the current PowerShell session
 
 
 ## Python
